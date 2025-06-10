@@ -11,7 +11,8 @@ namespace Unity.FPS.UI
         [Tooltip("Root GameObject of the menu used to toggle its activation")]
         public GameObject MenuRoot;
 
-        [Tooltip("Master volume when menu is open")] [Range(0.001f, 1f)]
+        [Tooltip("Master volume when menu is open")]
+        [Range(0.001f, 1f)]
         public float VolumeWhenMenuOpen = 0.5f;
 
         [Tooltip("Slider component for look sensitivity")]
@@ -32,6 +33,8 @@ namespace Unity.FPS.UI
         PlayerInputHandler m_PlayerInputsHandler;
         Health m_PlayerHealth;
         FramerateCounter m_FramerateCounter;
+
+        public GameObject UI_Achievement;
 
         void Start()
         {
@@ -88,6 +91,9 @@ namespace Unity.FPS.UI
 
             }
 
+
+
+
             if (Input.GetAxisRaw(GameConstants.k_AxisNameVertical) != 0)
             {
                 if (EventSystem.current.currentSelectedGameObject == null)
@@ -115,6 +121,8 @@ namespace Unity.FPS.UI
                 AudioUtility.SetMasterVolume(VolumeWhenMenuOpen);
 
                 EventSystem.current.SetSelectedGameObject(null);
+
+                UI_Achievement.SetActive(true);
             }
             else
             {
@@ -122,6 +130,9 @@ namespace Unity.FPS.UI
                 Cursor.visible = false;
                 Time.timeScale = 1f;
                 AudioUtility.SetMasterVolume(1);
+
+                UI_Achievement.SetActive(false);
+
             }
 
         }
