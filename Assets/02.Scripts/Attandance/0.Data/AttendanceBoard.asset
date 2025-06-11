@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7a04019c9c61949a1d92c4966c8719, type: 3}
+  m_Name: AttendanceBoard
+  m_EditorClassIdentifier: 
+  Rewards:
+  - {fileID: 11400000, guid: c8c2a508f3e164144b52ae041d666fbb, type: 2}
+  - {fileID: 11400000, guid: f82ab1718b056024bb8cffc3ef600079, type: 2}
+  - {fileID: 11400000, guid: 0d177ccdd513c924694f0cb5134d9043, type: 2}
+  - {fileID: 11400000, guid: 66a94e762bb5da2488e9e4209c7d43ee, type: 2}
+  - {fileID: 11400000, guid: e4ec3b9577ca17a48ab3cb5365664454, type: 2}
+  - {fileID: 11400000, guid: 75f7db7622f281e43a3f210481566f70, type: 2}
+  - {fileID: 11400000, guid: afcc1901a35172142944e6809d8745ef, type: 2}
