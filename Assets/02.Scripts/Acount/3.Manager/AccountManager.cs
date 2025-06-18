@@ -65,6 +65,11 @@ public class AccountManager : MonoBehaviour
         return false;
     }
 
+    public Account GetMyAccount()
+    {
+        return _myAccount;
+    }
+
 
 
 
